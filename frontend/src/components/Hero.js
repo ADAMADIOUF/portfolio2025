@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Link as ScrollLink } from 'react-scroll' // Import ScrollLink for smooth scrolling
+import { Link as ScrollLink } from 'react-scroll' 
 import a from '../assets/profile.png'
 import heroImage from '../assets/hero.png'
 
