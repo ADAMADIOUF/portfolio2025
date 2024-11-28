@@ -19,7 +19,7 @@ const Contact = () => {
           </div>
           <div className='contact-offer'>
             <h3>
-              <span>Website Design and Development: :</span>Designing and
+              <span>Website Design and Development:</span>Designing and
               developing custom websites with a focus on clean, professional
               aesthetics and optimal performance.
             </h3>

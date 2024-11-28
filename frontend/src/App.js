@@ -8,6 +8,7 @@ import LoadingAnimation from './components/LoadingAnimation' // Import the Loadi
 import Skills from './components/Skills'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Testimonial from './components/Testimonial'
 
 const App = () => {
   const [loading, setLoading] = useState(true) // State to manage loading
@@ -22,20 +23,20 @@ const App = () => {
 
   return (
     <div>
-      {/* {loading ? ( // Conditional rendering of loading animation
+      {loading ? (
         <LoadingAnimation />
       ) : (
-        <> */}
-      
+        <>
           <Navbar />
           <Home />
           <About />
           <Projects />
-          <Skills/>
-          <Contact/>
-          <Footer/>
-        {/* </>
-      )} */}
+          <Skills />
+          <Contact />
+          <Testimonial />
+          <Footer />
+        </>
+      )}
     </div>
   )
 }

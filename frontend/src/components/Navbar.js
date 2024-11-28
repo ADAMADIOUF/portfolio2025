@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import { Link } from 'react-scroll'
 import { links } from '../data'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import logo from '../assets/logo.png' // Updated variable name for consistency
-import heroImage from '../assets/hero.png' // Updated variable name for consistency
+import logo from '../assets/logo.png' 
+import { Link as ScrollLink } from 'react-scroll'
 
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false)
@@ -47,11 +47,16 @@ const Navbar = () => {
         </ul>
 
         <div className='image-wrapper'>
-          <img src={logo} alt='Logo' className='image' />
-          <h6 className='btn-nav'>Get in Touch</h6>
+          <ScrollLink
+            to='contact'
+            smooth={true}
+            duration={500} // Adjust the duration for smoothness
+          >
+            <img src={logo} alt='Logo' className='image' />
+            <h6 className='btn-nav'>Get in Touch</h6>
+          </ScrollLink>
         </div>
       </div>
-      
     </nav>
   )
 }

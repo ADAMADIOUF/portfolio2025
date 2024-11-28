@@ -5,6 +5,7 @@ import p3 from '../assets/p3.png'
 import p4 from '../assets/p4.png'
 
 import { FaArrowRight, FaGithub } from 'react-icons/fa'
+import { motion } from 'framer-motion' 
 
 const Projects = () => {
   return (
@@ -15,10 +16,23 @@ const Projects = () => {
         </div>
         <div className='container-projects'>
           {/* Project 1 */}
-          <article className='projects-img'>
+          <motion.article
+            className='projects-img'
+            initial={{ opacity: 0, x: -100 }} // Start off-screen
+            whileInView={{ opacity: 1, x: 0 }} // Fade in and slide in when in view
+            transition={{ duration: 1 }}
+            viewport={{ once: true }} // Animation triggers once when in view
+          >
             <img src={p} alt='' />
-          </article>
-          <article className='projects-info'>
+          </motion.article>
+
+          <motion.article
+            className='projects-info'
+            initial={{ opacity: 0, x: 100 }} // Start off-screen
+            whileInView={{ opacity: 1, x: 0 }} // Fade in and slide in when in view
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+          >
             <h3>Blog Website</h3>
             <p>MERN Stack Developer</p>
             <div className='projects-languages'>
@@ -53,10 +67,16 @@ const Projects = () => {
                 </a>
               </button>
             </div>
-          </article>
+          </motion.article>
 
           {/* Project 2 */}
-          <article className='projects-info'>
+          <motion.article
+            className='projects-info'
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+          >
             <h3>Real Estate Website</h3>
             <p>MERN Stack Developer</p>
             <div className='projects-languages'>
@@ -90,17 +110,35 @@ const Projects = () => {
                 </a>
               </button>
             </div>
-          </article>
+          </motion.article>
 
-          <article className='projects-img'>
+          <motion.article
+            className='projects-img'
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+          >
             <img src={p2} alt='' />
-          </article>
-          <article className='projects-img'>
+          </motion.article>
+          <motion.article
+            className='projects-img'
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+          >
             <img src={p3} alt='' />
-          </article>
+          </motion.article>
 
           {/* Project 3 */}
-          <article className='projects-info'>
+          <motion.article
+            className='projects-info'
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+          >
             <h3>E-commerce Storefront</h3>
             <p>MERN Stack Developer</p>
             <div className='projects-languages'>
@@ -136,10 +174,16 @@ const Projects = () => {
                 </a>
               </button>
             </div>
-          </article>
+          </motion.article>
 
           {/* Project 4 */}
-          <article className='projects-info'>
+          <motion.article
+            className='projects-info'
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+          >
             <h3>Task Management Dashboard</h3>
             <p>MERN Stack Developer</p>
             <div className='projects-languages'>
@@ -173,11 +217,17 @@ const Projects = () => {
                 </a>
               </button>
             </div>
-          </article>
+          </motion.article>
 
-          <article className='projects-img'>
+          <motion.article
+            className='projects-img'
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+          >
             <img src={p4} alt='' />
-          </article>
+          </motion.article>
         </div>
       </div>
     </div>
