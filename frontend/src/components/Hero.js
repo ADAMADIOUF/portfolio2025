@@ -45,23 +45,23 @@ const Hero = () => {
         </motion.p>
 
         <div className='btn-hero-container'>
-          {/* ScrollLink for smooth scrolling to projects */}
+          
           <motion.button
             className='btn-hero-work'
             variants={buttonVariants}
             whileHover='hover'
           >
             <ScrollLink
-              to='projects' // The section ID to scroll to
-              smooth={true} // Enable smooth scrolling
-              duration={500} // Duration of the scroll
-              offset={-80} // Adjust if you have a fixed navbar
+              to='projects' 
+              smooth={true} 
+              duration={500} 
+              offset={-80} 
             >
               View My Work
             </ScrollLink>
           </motion.button>
 
-          {/* ScrollLink for smooth scrolling to contact */}
+          
           <motion.button
             className='btn-hero-hired'
             variants={buttonVariants}

@@ -389,7 +389,9 @@ angle: -41.58 deg;
 background-color: var(--clr-primary-9);
 
 }
-
+.hero-container{
+  margin-left: 1rem;
+}
 .hero-container h3 {
   font-size: 1.5rem;
   font-weight: 700;
