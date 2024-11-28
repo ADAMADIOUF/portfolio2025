@@ -18,18 +18,18 @@ const Projects = () => {
           {/* Project 1 */}
           <motion.article
             className='projects-img'
-            initial={{ opacity: 0, x: -100 }} // Start off-screen
-            whileInView={{ opacity: 1, x: 0 }} // Fade in and slide in when in view
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            viewport={{ once: true }} // Animation triggers once when in view
+            viewport={{ once: true }}
           >
             <img src={p} alt='' />
           </motion.article>
 
           <motion.article
             className='projects-info'
-            initial={{ opacity: 0, x: 100 }} // Start off-screen
-            whileInView={{ opacity: 1, x: 0 }} // Fade in and slide in when in view
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
@@ -123,7 +123,7 @@ const Projects = () => {
           </motion.article>
           <motion.article
             className='projects-img'
-            initial={{ opacity: 0, x: 100 }}
+            initial={{ opacity: 0, x: -100 }} // Start off-screen
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
@@ -134,7 +134,7 @@ const Projects = () => {
           {/* Project 3 */}
           <motion.article
             className='projects-info'
-            initial={{ opacity: 0, x: -100 }}
+            initial={{ opacity: 0, x: -100 }} // Start off-screen
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
@@ -179,7 +179,7 @@ const Projects = () => {
           {/* Project 4 */}
           <motion.article
             className='projects-info'
-            initial={{ opacity: 0, x: -100 }}
+            initial={{ opacity: 0, x: -100 }} // Start off-screen
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
@@ -221,7 +221,7 @@ const Projects = () => {
 
           <motion.article
             className='projects-img'
-            initial={{ opacity: 0, x: 100 }}
+            initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
