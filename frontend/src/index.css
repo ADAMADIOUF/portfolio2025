@@ -810,12 +810,12 @@ flex-shrink: 0;
 .contact-container {
   display: grid;
   gap: 2rem;
-  align-items: stretch; /* Ensure equal height for children */
+  align-items: stretch; 
 }
 
 @media (min-width: 992px) {
   .contact-container {
-    grid-template-columns: 1fr 1fr; /* Two-column layout */
+    grid-template-columns: 1fr 1fr; 
     gap: 3rem;
   }
 }

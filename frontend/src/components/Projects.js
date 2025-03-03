@@ -9,19 +9,19 @@ import { motion } from 'framer-motion'
 
 const Projects = () => {
   return (
+        <div className='container-projects'>
     <div className='projects' id='projects'>
       <div className='section-center'>
         <div className='projrect-title'>
           <h3>Featured Projects</h3>
         </div>
-        <div className='container-projects'>
           {/* Project 1 */}
           <motion.article
+            viewport={{ once: true }}
             className='projects-img'
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            viewport={{ once: true }}
           >
             <img src={p} alt='' />
           </motion.article>

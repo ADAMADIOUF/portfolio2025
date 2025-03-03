@@ -8,18 +8,16 @@ const About = () => {
   return (
     <div className='about' id='about'>
       <div className='section-center'>
-       
         <div className='title-about'>
           <h3>Develop, Implement, Reliable & Innovate.</h3>
         </div>
 
-        
         <motion.div
           className='about-first-text'
-          initial={{ opacity: 0 }} 
-          whileInView={{ opacity: 1 }} 
-          transition={{ duration: 1 }} 
-          viewport={{ once: true }} 
+          initial={{ opacity: 0, y: -50 }} // Start from the top
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
         >
           <p>
             I'm Adama Diouf, a dedicated React Developer & Front-End Developer
@@ -33,13 +31,12 @@ const About = () => {
           </p>
         </motion.div>
 
-        
         <motion.div
           className='about-second-text'
-          initial={{ opacity: 0 }} 
-          whileInView={{ opacity: 1 }} 
-          transition={{ duration: 1 }} 
-          viewport={{ once: true }} 
+          initial={{ opacity: 0, y: 50 }} // Start from the bottom
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
         >
           <p>
             Having played a pivotal role in successful project deliveries
@@ -53,12 +50,11 @@ const About = () => {
           </p>
         </motion.div>
 
-        
         <ScrollLink to='contact' smooth={true} duration={500} offset={-80}>
           <motion.button
             className='btn-hero-hired'
-            initial={{ opacity: 0 }} 
-            whileInView={{ opacity: 1 }} 
+            initial={{ opacity: 0, y: 50 }} // Start from the bottom
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
             My Skills
@@ -66,11 +62,10 @@ const About = () => {
         </ScrollLink>
       </div>
 
-      
       <motion.div
         className='first-image'
-        initial={{ opacity: 0, x: -100 }} 
-        whileInView={{ opacity: 1, x: 0 }} 
+        initial={{ opacity: 0, y: -100 }} // Start from the top
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
       >
@@ -79,15 +74,15 @@ const About = () => {
 
       <motion.div
         className='second-image'
-        initial={{ opacity: 0, x: 100 }} 
-        whileInView={{ opacity: 1, x: 0 }} 
+        initial={{ opacity: 0, y: 100 }} // Start from the bottom
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
       >
         <img src={b} alt='TypeScript' />
       </motion.div>
+
     </div>
   )
 }
-
 export default About

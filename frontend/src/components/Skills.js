@@ -22,7 +22,7 @@ const Skills = () => {
           <div className='skills-container'>
             <motion.div
               className='column'
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 50 }} // Bottom
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
@@ -36,7 +36,7 @@ const Skills = () => {
             </motion.div>
             <motion.div
               className='column'
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 50 }} // Bottom
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
@@ -50,7 +50,7 @@ const Skills = () => {
             </motion.div>
             <motion.div
               className='column'
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 50 }} // Bottom
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
@@ -64,7 +64,7 @@ const Skills = () => {
             </motion.div>
             <motion.div
               className='column'
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 50 }} // Bottom
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
@@ -78,7 +78,7 @@ const Skills = () => {
             </motion.div>
             <motion.div
               className='column'
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 50 }} // Bottom
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
@@ -92,7 +92,7 @@ const Skills = () => {
             </motion.div>
             <motion.div
               className='column'
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 50 }} // Bottom
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
@@ -106,7 +106,7 @@ const Skills = () => {
             </motion.div>
             <motion.div
               className='column'
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 50 }} // Bottom
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
@@ -130,8 +130,8 @@ const Skills = () => {
             />
             <motion.div
               className='skills-years'
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: -50 }} // Top
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
@@ -145,8 +145,8 @@ const Skills = () => {
       </div>
       <motion.div
         className='first-img-skills'
-        initial={{ opacity: 0, x: -100 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, y: -100 }} // Top
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
         viewport={{ once: true }}
       >
@@ -154,8 +154,8 @@ const Skills = () => {
       </motion.div>
       <motion.div
         className='second-img-skills'
-        initial={{ opacity: 0, x: 100 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, y: 100 }} // Bottom
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
         viewport={{ once: true }}
       >
