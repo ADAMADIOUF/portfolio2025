@@ -9,6 +9,7 @@ import Skills from './components/Skills'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Testimonial from './components/Testimonial'
+import Services from './components/Services'
 
 const App = () => {
   const [loading, setLoading] = useState(true) // State to manage loading
@@ -32,6 +33,7 @@ const App = () => {
           <About />
           <Projects />
           <Skills />
+          <Services/>
           <Contact />
          <Testimonial/>
           <Footer /> 

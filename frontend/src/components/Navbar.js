@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import { Link } from 'react-scroll'
 import { links } from '../data'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import logo from '../assets/logo.png' 
+import logo from '../assets/logo.png'
 import { Link as ScrollLink } from 'react-scroll'
+import LanguageSwitcher from './LanguageSwitcher'
 
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false)
@@ -44,6 +45,20 @@ const Navbar = () => {
               </li>
             )
           })}
+          {/* Add "Services" link */}
+          <li className='nav-item'>
+            <Link
+              activeClass='active'
+              to='services'
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-navbarHeight}
+              onClick={handleItemClick}
+            >
+              Services
+            </Link>
+          </li>
         </ul>
 
         <div className='image-wrapper'>
@@ -57,6 +72,7 @@ const Navbar = () => {
           </ScrollLink>
         </div>
       </div>
+      <LanguageSwitcher />
     </nav>
   )
 }
