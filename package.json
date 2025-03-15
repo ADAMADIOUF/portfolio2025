@@ -9,13 +9,13 @@
     "server": "nodemon backend/server.js",
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "build": ""
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.1",
+    "express": "^4.21.2",
     "mongoose": "^8.8.3",
     "nodemailer": "^6.9.16"
   },
