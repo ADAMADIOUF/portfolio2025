@@ -87,6 +87,7 @@ const Hero = () => {
           variants={imageVariants}
         />
       </div>
+     
     </div>
   )
 }

@@ -377,7 +377,6 @@ h3 {
 }
 
 
-/* Hero */
 /* Keyframes for animations */
 @keyframes fadeIn {
   0% {
@@ -503,7 +502,8 @@ h3 {
   margin-top: 40px;
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .btn-hero-work,
@@ -539,11 +539,10 @@ h3 {
 
 /* Profile Image with floating effect */
 .hero-profile {
-  position: absolute;
-  bottom: 5%;
-  right: 5%;
-  width: 200px;
-  height: 200px;
+  position: relative;
+  margin-top: 30px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   border: 5px solid #fff;
   padding: 10px;
@@ -565,21 +564,21 @@ h3 {
 }
 
 /* Responsive Design */
-@media (min-width: 768px) {
-  .hero-container {
-    text-align: left;
+@media (max-width: 1024px) {
+  .hero {
+    padding: 60px 20px;
   }
 
   .hero h3 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .hero h1 {
-    font-size: 4rem;
+    font-size: 3.2rem;
   }
 
   .hero p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .btn-hero-container {
@@ -588,30 +587,87 @@ h3 {
 
   .btn-hero-work,
   .btn-hero-hired {
-    font-size: 1.1rem;
-    padding: 18px 35px;
+    font-size: 1rem;
+    padding: 14px 28px;
   }
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 768px) {
   .hero {
-    padding: 80px 40px;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 15px;
   }
 
   .hero h3 {
-    font-size: 3rem;
+    font-size: 1.8rem;
   }
 
   .hero h1 {
-    font-size: 4.5rem;
+    font-size: 2.8rem;
   }
 
-  .hero p {
+  .hero h2 {
     font-size: 1.3rem;
   }
 
+  .hero p {
+    font-size: 1rem;
+  }
+
   .btn-hero-container {
-    margin-top: 60px;
+    margin-top: 30px;
+    gap: 15px;
+  }
+
+  .btn-hero-work,
+  .btn-hero-hired {
+    font-size: 0.9rem;
+    padding: 12px 24px;
+  }
+
+  .hero-profile {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 40px 10px;
+  }
+
+  .hero h3 {
+    font-size: 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .btn-hero-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-hero-work,
+  .btn-hero-hired {
+    width: 100%;
+    font-size: 0.85rem;
+    padding: 10px 20px;
+  }
+
+  .hero-profile {
+    width: 130px;
+    height: 130px;
   }
 }
 
