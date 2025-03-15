@@ -113,7 +113,13 @@ const Projects = () => {
             </div>
             <div className='projects-buttons'>
               <button className='view-project-btn'>
-                View Project <FaArrowRight />
+                <a
+                  href='https://lithiumseo.com/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  View Project <FaGlobe />
+                </a>
               </button>
               <button className='github-btn'>
                 <a
