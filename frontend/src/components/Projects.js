@@ -33,7 +33,7 @@ const Projects = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            <h3>Restaurant Website</h3>
+            <h3>Poultry Website - Mame Doussou Camara</h3>
             <p>React.js & Tailwind CSS Developer</p>
             <div className='projects-languages'>
               <span>React.js</span>
@@ -44,18 +44,20 @@ const Projects = () => {
             </div>
             <div className='project-details'>
               <p>
-                A dynamic restaurant website that allows customers to view the
-                menu, place orders, and make reservations. Built with React.js,
-                Tailwind CSS, and Node.js, the website features a clean, modern
-                design and seamless user interaction. The project focuses on
-                providing a smooth experience with features such as a
-                reservation system, real-time menu updates, and order tracking.
+                A dynamic poultry website designed for Mame Doussou Camara,
+                allowing customers to explore and purchase poultry products
+                online. Built with React.js, Tailwind CSS, and Node.js, the
+                website offers a modern and user-friendly interface. Features
+                include a product catalog, real-time inventory updates, and a
+                secure payment system for online orders. The project aims to
+                provide a smooth shopping experience for poultry enthusiasts and
+                support efficient business operations.
               </p>
             </div>
             <div className='projects-buttons'>
               <button className='view-project-btn'>
                 <a
-                  href='https://www.mimexicominotnd.com/'
+                  href='https://www.mamedoussoucamara.com/' // Replace with the actual project link
                   target='_blank'
                   rel='noopener noreferrer'
                 >
@@ -64,7 +66,7 @@ const Projects = () => {
               </button>
               <button className='github-btn'>
                 <a
-                  href='https://github.com/your-repo-link'
+                  href='https://github.com/ADAMADIOUF/mamedoussoucamara' // Replace with the actual GitHub repo link
                   target='_blank'
                   rel='noopener noreferrer'
                 >
@@ -114,7 +116,7 @@ const Projects = () => {
             <div className='projects-buttons'>
               <button className='view-project-btn'>
                 <a
-                  href='https://lithiumseo.com/'
+                  href='https://inspiredev.onrender.com'
                   target='_blank'
                   rel='noopener noreferrer'
                 >
@@ -123,7 +125,7 @@ const Projects = () => {
               </button>
               <button className='github-btn'>
                 <a
-                  href='https://github.com/your-repo-link'
+                  href='https://github.com/ADAMADIOUF/inspiredev'
                   target='_blank'
                   rel='noopener noreferrer'
                 >
