@@ -34,10 +34,10 @@ const Projects = () => {
             viewport={{ once: true }}
           >
             <h3>Poultry Website - Mame Doussou Camara</h3>
-            <p>React.js & Tailwind CSS Developer</p>
+            <p>React.js &  CSS Developer</p>
             <div className='projects-languages'>
               <span>React.js</span>
-              <span>Tailwind CSS</span>
+              <span>CSS</span>
               <span>Node.js</span>
               <span>Express.js</span>
               <span>MongoDB</span>
