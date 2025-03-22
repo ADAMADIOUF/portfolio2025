@@ -4,7 +4,8 @@ import p2 from '../assets/p2.png'
 import p3 from '../assets/p3.png'
 import p4 from '../assets/p4.png'
 import p5 from '../assets/p5.png' 
-import p6 from '../assets/p6.png' 
+import p6 from '../assets/p6.png'
+import p7 from '../assets/p7.jpg'  
 import { FaArrowRight, FaGithub, FaGlobe } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 
@@ -23,6 +24,65 @@ const Projects = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
+            <img src={p7} alt='El Reparo Mexican' />
+          </motion.article>
+
+          <motion.article
+            className='projects-info'
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+          >
+            <h3>Restaurant Website - El Reparo Mexican</h3>
+            <p>Mern Stack Developer</p>
+            <div className='projects-languages'>
+              <span>React.js</span>
+              <span> CSS</span>
+              <span>Node.js</span>
+              <span>Express.js</span>
+              <span>MongoDB</span>
+            </div>
+            <div className='project-details'>
+              <p>
+                A modern and visually appealing website for El Reparo Mexican,
+                offering an engaging online presence for the restaurant. Built
+                with React.js and CSS, the site provides an intuitive menu
+                browsing experience, online reservations, and contact
+                information. The backend, powered by Node.js and MongoDB,
+                ensures smooth order processing and efficient customer
+                interactions.
+              </p>
+            </div>
+            <div className='projects-buttons'>
+              <button className='view-project-btn'>
+                <a
+                  href='https://elreparo.onrender.com/' // Replace with the actual project link
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  View Project <FaGlobe />
+                </a>
+              </button>
+              <button className='github-btn'>
+                <a
+                  href='https://github.com/ADAMADIOUF/elreparo' // Replace with the actual GitHub repo link
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  View on GitHub <FaGithub />
+                </a>
+              </button>
+            </div>
+          </motion.article>
+
+          <motion.article
+            className='projects-img'
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+          >
             <img src={p6} alt='' />
           </motion.article>
 
@@ -34,7 +94,7 @@ const Projects = () => {
             viewport={{ once: true }}
           >
             <h3>Poultry Website - Mame Doussou Camara</h3>
-            <p>React.js &  CSS Developer</p>
+            <p>React.js & CSS Developer</p>
             <div className='projects-languages'>
               <span>React.js</span>
               <span>CSS</span>
